@@ -3,6 +3,8 @@
 在会话工具栏放一个按钮，用来开关单个技能、把技能限定在指定工作区。
 不需要构建、没有运行时依赖，纯 JS 的两个文件（宿主半边 + 浏览器半边）。
 
+![技能管理面板](docs/screenshot.png)
+
 ## 功能
 
 - **开关**：关掉的技能在模型技能清单、`/` 菜单和 `skill` 工具里同时消失，
@@ -19,8 +21,8 @@
 
 | 来源 | 填什么 | 前提 |
 | --- | --- | --- |
-| 本地目录（推荐） | 把本仓库下载成 zip 解压，填解压目录的绝对路径，例如 `D:\code\11` | 无 |
-| GitHub | `git+https://github.com/zjyzsa/11.git` | 运行 DSH 的机器上要装有 `git`，否则安装会报 `git ls-remote failed` |
+| 本地目录（推荐） | 把本仓库下载成 zip 解压，填解压目录的绝对路径，例如 `D:\code\dsh-skill-manager` | 无 |
+| GitHub | `git+https://github.com/zjyzsa/dsh-skill-manager.git` | 运行 DSH 的机器上要装有 `git`，否则安装会报 `git ls-remote failed` |
 | npm（如果发布过） | `dsh-skill-manager` | 无 |
 
 安装由 DSH 的插件管理器完成，不需要手动改 profile 里的 `package.json` 或
@@ -32,6 +34,8 @@
 1. 打开任意会话，点标题右侧的滑块图标，或把指针停在上面看提示「管理技能」。
 2. 每个技能一行：右边开关控制可用性，下面「限定工作区…」展开目录选择。
 3. 选择目录会用系统目录对话框；「取消限制」把技能恢复成所有工作区可用。
+
+![限定工作区](docs/screenshot-scope.png)
 
 设置存在 `<DSH_HOME>/skill-manager/state.json`，按用户共享，跨会话生效。
 
@@ -63,6 +67,7 @@ cordis.patch.yml   安装时插入的配置行
 locale/{en,zh}.json 标题与描述
 icon.svg           插件图标
 docs/DETAIL.md     完整行为说明（中文）
+docs/screenshot*.png README 里的界面截图
 ```
 
 ## 限制
