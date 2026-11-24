@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Skill manager",
+    "description": "Turn individual skills on or off and limit them to chosen workspaces, from a button in the Session toolbar.",
+    "detail": "docs/DETAIL.md"
+  }
+}

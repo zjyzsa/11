@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+
+# Local runs and scratch output
+*.log
+.dsh-tmp/
+.dsh-pilot/

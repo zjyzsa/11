@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "技能管理",
+    "description": "开启或停用技能，把技能限定在指定工作区；入口在会话工具栏。",
+    "detail": "docs/DETAIL.md"
+  }
+}
