@@ -17,11 +17,11 @@
 
 在 DeepSeek Harness 的「插件」页点「添加插件」，填下面任意一种来源：
 
-| 来源 | 填什么 |
-| --- | --- |
-| GitHub | `git+https://github.com/zjyzsa/11.git` |
-| 本地目录 | 本仓库目录的绝对路径，例如 `D:\code\11` |
-| npm（如果发布过） | `dsh-skill-manager` |
+| 来源 | 填什么 | 前提 |
+| --- | --- | --- |
+| 本地目录（推荐） | 把本仓库下载成 zip 解压，填解压目录的绝对路径，例如 `D:\code\11` | 无 |
+| GitHub | `git+https://github.com/zjyzsa/11.git` | 运行 DSH 的机器上要装有 `git`，否则安装会报 `git ls-remote failed` |
+| npm（如果发布过） | `dsh-skill-manager` | 无 |
 
 安装由 DSH 的插件管理器完成，不需要手动改 profile 里的 `package.json` 或
 `cordis.patch.yml`。装好之后重载页面（`Ctrl+R`），会话标题右侧就会出现滑块图标；
